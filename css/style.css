@@ -4,3 +4,7 @@ body {
   background-color: #43dde6;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+video {
+  max-width: 90%;
+}

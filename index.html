@@ -12,7 +12,34 @@
     <button class="button" id="backward"></button>
     <button class="button" id="forward"></button>
     <button class="button" id="play"></button>
-    <button class="button" id="pause"></button>
-    <video controls autoplay muted src="./videos/lofi.mp4"></video>
+    <button class="button" hidden id="pause"></button>
+    <video
+      id="video"
+      poster="./images/poster.jpg"
+      controls
+      muted
+      src="./videos/lofi.mp4"
+    ></video>
+    <!-- Script -->
+    <script>
+      // cada que te refieras a un elemento de HTMl utiliza un simbolo de pesos para saber que es lo que estas manipulando.
+      const $video = document.querySelector("#video");
+      const $play = document.querySelector("#play");
+      const $pause = document.querySelector("#pause");
+
+      $play.addEventListener("click", handlePlay);
+      $pause.addEventListener("click", handlePause);
+
+      function handlePlay() {
+        $video.play();
+        $play.hidden = true;
+        $pause.hidden = false;
+      }
+      function handlePause() {
+        $video.pause();
+        $pause.hidden = true;
+        $play.hidden = false;
+      }
+    </script>
   </body>
 </html>
