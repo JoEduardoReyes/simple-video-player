@@ -8,18 +8,43 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Hola mundo</h1>
-    <button class="button" id="backward"></button>
-    <button class="button" id="forward"></button>
-    <button class="button" id="play"></button>
-    <button class="button" hidden id="pause"></button>
-    <video
-      id="video"
-      poster="./images/poster.jpg"
-      controls
-      muted
-      src="./videos/lofi.mp4"
-    ></video>
+    <div class="wrapper">
+      <div class="player">
+        <button
+          class="button"
+          id="backward"
+          aria-label="Retroceder 10 segundos"
+          title="Retroceder 10 segundos"
+        ></button>
+        <button
+          class="button"
+          id="play"
+          aria-label="Reproducir video"
+          title="Reproducir video"
+        ></button>
+        <button
+          class="button"
+          hidden
+          id="pause"
+          aria-label="Pausar video"
+          title="Pausar video"
+        ></button>
+        <button
+          class="button"
+          id="forward"
+          aria-label="Adelantar 10 segundos"
+          title="Adelantar 10 segundos"
+        ></button>
+        <video
+          class="video"
+          id="video"
+          poster="./images/poster.jpg"
+          controls
+          muted
+          src="./videos/lofi.mp4"
+        ></video>
+      </div>
+    </div>
     <!-- Script -->
     <script>
       // cada que te refieras a un elemento de HTMl utiliza un simbolo de pesos para saber que es lo que estas manipulando.

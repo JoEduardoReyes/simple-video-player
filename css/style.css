@@ -4,7 +4,11 @@ body {
   background-color: #43dde6;
   font-family: Arial, Helvetica, sans-serif;
 }
+.wrapper {
+  max-inline-size: 900px;
+  margin: auto;
+}
 
-video {
-  max-width: 90%;
+.player video {
+  inline-size: 100%;
 }
