@@ -28,7 +28,7 @@ function handleBackward() {
 $forward.addEventListener("click", handleForward);
 
 function handleForward() {
-  $video.currentTime += $video.currentTime;
+  $video.currentTime += 10;
 }
 
 // bara de carga
